@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
+    unused_variable = 123
     return render_template("index.html")
 
 @app.route("/about")
